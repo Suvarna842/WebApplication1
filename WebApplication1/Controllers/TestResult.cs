@@ -9,16 +9,16 @@ namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class Result : ControllerBase
+    public class TestResult : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
             "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<Result> _logger;
+        private readonly ILogger<TestResult> _logger;
 
-        public Result(ILogger<Result> logger)
+        public TestResult(ILogger<TestResult> logger)
         {
             _logger = logger;
         }
